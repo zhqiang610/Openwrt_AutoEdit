@@ -67,6 +67,12 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
+        
+    - name: Import external feeds - passwall
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
+        git clone https://github.com/xiaozhuai/luci-app-filebrowser package/lean/ 
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
