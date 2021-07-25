@@ -78,7 +78,7 @@ jobs:
       working-directory: ./openwrt
       run: |
         git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
-        git clone https://github.com/xiaozhuai/luci-app-filebrowser package/lean/ 
+        git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser 
 
     - name: Load custom configuration
       run: |
