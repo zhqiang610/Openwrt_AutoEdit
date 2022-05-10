@@ -76,7 +76,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds install -a
       
     - name: Import external feeds
-      run: cd openwrt && git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
+    #  run: cd openwrt && git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
     #    git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser 
 
     - name: Load custom configuration
